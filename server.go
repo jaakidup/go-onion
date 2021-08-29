@@ -25,7 +25,7 @@ func (kitty *Kitty) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.Write(output)
 }
 
-// Move to seperate counter service
+// Move to separate counter service
 type countHandler struct {
 	mu sync.Mutex // guards n
 	n  int
